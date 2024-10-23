@@ -1,0 +1,1516 @@
+Web Programming Practical Exam
+[download option] = file[top left] -> download button ->choose required file and save it in “C-drive” [hide it]
+1. Basic Web Page (HTML for Personal Blog)
+<html>
+<head>
+    <title>My Personal Blog</title>
+</head>
+<body>
+    <h1>Welcome to My Blog!</h1>
+    <img src="profile.jpg" alt="Profile Image" width="150">
+    <p>Hello! I'm [Your Name]. Welcome to my blog where I share thoughts on coding, life, and more!</p>
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li> //create this files also
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+2. Personal Portfolio Webpage (HTML5 Semantic Elements)
+<html>
+<head>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>[Your Name] - Web Developer</h1>
+    </header>
+    <section>
+        <h2>Experience</h2>
+        <p>Web Developer at XYZ Company</p>
+ </section>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React, Node.js, Django</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <p>Project 1: [Description]</p>
+    </section>
+    <footer>
+        <p>Contact: [Your Email]</p>
+    </footer>
+</body>
+</html>
+Product Catalog (HTML Tables)
+<html>
+<head>
+    <title>Electronics Catalog</title>
+</head>
+<body>
+    <h1>Product Catalog</h1>
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Specifications</th>
+        </tr>
+        <tr>
+            <td>Smartphone</td>
+            <td>$500</td>
+            <td>64GB, 4GB RAM, 12MP Camera</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>$1200</td>
+            <td>256GB SSD, 8GB RAM, i7 Processor</td>
+        </tr>
+    </table>
+</body>
+</html>
+4. Contact Form (HTML Form Elements)
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="service">Service Inquiry:</label><br>
+        <input type="radio" id="web_design" name="service" value="Web Design">
+        <label for="web_design">Web Design</label><br>
+        <input type="radio" id="seo" name="service" value="SEO">
+        <label for="seo">SEO</label><br><br>
+        <label>Preferred Contact Method:</label><br>
+        <input type="checkbox" id="email_method" name="contact_method" value="Email">
+      <label for="email_method">Email</label><br>
+        <input type="checkbox" id="phone" name="contact_method" value="Phone">
+        <label for="phone">Phone</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+5. Photo Gallery (HTML Image Elements)
+<html>
+<head>
+    <title>Travel Blog Gallery</title>
+</head>
+<body>
+    <h1>My Travel Gallery</h1>
+    <div>
+        <h2>Paris</h2>
+        <img src="paris.jpg" alt="Paris" width="300">
+        <p>A beautiful view of the Eiffel Tower.</p>
+    </div>
+    <div>
+        <h2>Tokyo</h2>
+        <img src="tokyo.jpg" alt="Tokyo" width="300">
+        <p>Nightlife in Shibuya.</p>
+    </div>
+</body>
+</html>
+6. Internal CSS Styling for Headings and Paragraphs
+<html>
+<head>
+    <style>
+        h1 {
+            color: blue;
+            font-family: 'Arial', sans-serif;
+        }
+        p {
+            font-size: 16px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Us</h1>
+    <p>We are a small business with a passion for excellence.</p>
+</body>
+</html>
+7. Styled Product Page with CSS
+<html>
+<head>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            display: inline-block;
+        }
+        .product h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        .product p {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <h2>Smartphone</h2>
+        <p>$500</p>
+    </div>
+    <div class="product">
+        <h2>Laptop</h2>
+        <p>$1200</p>
+    </div>
+</body>
+</html>
+8. Responsive Layout with CSS Grid and Flexbox
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .article {
+            padding: 15px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="article">
+            <h2>Article 1</h2>
+            <p>Content goes here.</p>
+        </div>
+        <div class="article">
+            <h2>Article 2</h2>
+            <p>Content goes here.</p>
+        </div>
+    </div>
+</body>
+</html>
+9. Navigation Bar with Hover Effects
+<html>
+<head>
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        nav ul li a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+10. Responsive Webpage with Bootstrap and Login Form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fitness App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="text-center">Login</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+11. Responsive Portfolio with Bootstrap Grid
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">My Portfolio</h1>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Description of project 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Description of project 2.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+12. Typography Showcase with External CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Blog Title</h1>
+    <h2>Subheading</h2>
+    <p>This is a paragraph styled with external CSS. It uses a specific font, size, and color.</p>
+    <blockquote>This is a blockquote for highlighting important content.</blockquote>
+    <footer>Footnote or additional reference text.</footer>
+</body>
+</html>
+In your styles.css:
+h1 {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    color: #555;
+}
+footer {
+    font-size: 12px;
+    color: #999;
+}
+13. CSS Button Hover Effect
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Effect</title>
+    <style>
+        .btn-signup {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-signup:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-signup">Sign Up</button>
+</body>
+</html>
+14. Background Image with CSS Styling
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Homepage</title>
+    <style>
+        body {
+            background-image: url('bakery.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+        h1 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Bakery!</h1>
+    <p>Delicious baked goods every day!</p>
+</body>
+</html>
+15. Pricing Table with CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+<style>
+        .pricing-table {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .plan {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 30%;
+        }
+        .plan h2 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        .plan p {
+            font-size: 14px;
+            color: #555;
+        }
+        .plan .price {
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="pricing-table">
+        <div class="plan">
+            <h2>Basic</h2>
+            <p>Features of the Basic Plan</p>
+            <p class="price">$10/month</p>
+        </div>
+        <div class="plan">
+            <h2>Pro</h2>
+            <p>Features of the Pro Plan</p>
+            <p class="price">$20/month</p>
+        </div>
+        <div class="plan">
+            <h2>Enterprise</h2>
+            <p>Features of the Enterprise Plan</p>
+            <p class="price">$50/month</p>
+        </div>
+    </div>
+</body>
+</html>
+16. Basic JavaScript Program for Arithmetic Operations
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var sum = num1 + num2;
+            document.getElementById("result").innerHTML = "Sum: " + sum;
+        }
+    </script>
+</body>
+</html>
+17. Add Interactivity to a Web Page using JavaScript Events
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <style>
+        .faq-question {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #e7e7e7;
+        }
+        .faq-question:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ Section</h1>
+    <div class="faq">
+        <div class="faq-question" onclick="toggleAnswer(1)">What is your return policy?</div>
+        <div class="faq-answer" id="answer1">You can return any item within 30 days.</div>
+        <div class="faq-question" onclick="toggleAnswer(2)">How long does shipping take?</div>
+        <div class="faq-answer" id="answer2">Shipping usually takes 5-7 business days.</div>
+    </div>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById('answer' + id);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
+18. BMI Calculator using JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <label for="height">Height (in meters):</label>
+    <input type="number" id="height" step="0.01"><br><br>
+    <label for="weight">Weight (in kilograms):</label>
+    <input type="number" id="weight" step="0.1"><br><br> 
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="result"></p>
+    <script>
+        function calculateBMI() {
+            var height = parseFloat(document.getElementById("height").value);
+            var weight = parseFloat(document.getElementById("weight").value);
+            var bmi = (weight / (height * height)).toFixed(2);
+            document.getElementById("result").innerHTML = "Your BMI is: " + bmi;
+        }
+    </script>
+</body>
+</html>
+19. JavaScript Form Validation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="error" style="color:red"></p>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var error = "";
+            if (name === "") {
+                error = "Name is required.";
+            } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+                error = "Please enter a valid email.";
+            } else if (!/^\d+$/.test(phone)) {
+                error = "Phone number should contain only digits.";
+            
+            if (error) {
+                document.getElementById("error").innerHTML = error;
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+20. Simple JavaScript Clock
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Clock</title>
+</head>
+<body>
+    <h1>Current Time:</h1>
+    <h2 id="clock"></h2>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            if (hours < 10) hours = '0' + hours;
+            if (minutes < 10) minutes = '0' + minutes;
+            if (seconds < 10) seconds = '0' + seconds;
+            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
+21. To-Do List Application
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+    <script>
+        function addTask() {
+            var task = document.getElementById("taskInput").value;
+            if (task === "") return;
+            var li = document.createElement("li");
+            li.innerHTML = task + ' <button onclick="removeTask(this)">Remove</button>';
+            document.getElementById("taskList").appendChild(li);
+            document.getElementById("taskInput").value = "";
+        }
+        function removeTask(button) {
+            var li = button.parentElement;
+            li.remove();
+        }
+    </script>
+</body>
+</html>
+22. JavaScript to Add, Remove, and Modify HTML Elements Dynamically
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <input type="text" id="itemInput" placeholder="Add an item">
+    <button onclick="addItem()">Add to Cart</button>
+    <ul id="cart"></ul>
+    <script>
+        function addItem() {
+            let item = document.getElementById("itemInput").value;
+            if (item === "") return;
+            var li = document.createElement("li");
+            li.innerHTML = item + ' <button onclick="removeItem(this)">Remove</button>';
+            document.getElementById("cart").appendChild(li);
+            document.getElementById("itemInput").value = "";
+        }
+        function removeItem(button) {
+            var li = button.parentElement;
+            li.remove();
+        }
+    </script>
+</body>
+</html>
+23. Form Validation using JavaScript for User Registration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Validation</title>
+</head>
+<body>
+    <h1>Conference Registration</h1>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+        <label for="sessions">Session:</label>
+        <select id="sessions">
+            <option value="">Select a session</option>
+            <option value="Session 1">Session 1</option>
+            <option value="Session 2">Session 2</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="error" style="color:red"></p>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var session = document.getElementById("sessions").value;
+            var error = "";
+            if (name === "") {
+               error = "Name is required.";
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+        error = "Please enter a valid email.";
+    } else if (session === "") {
+        error = "Please select a session.";
+    }
+    if (error) {
+        document.getElementById("error").innerHTML = error;
+        return false;
+    }
+    return true;
+}
+</script>
+</body>
+</html>
+24. Create a Simple Image Slideshow using JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <style>
+        #slideshow {
+            width: 500px;
+            height: 300px;
+            margin: auto;
+        }
+        #slideshow img {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+        #slideshow img.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Property Slideshow</h1>
+    <div id="slideshow">
+        <img src="house1.jpg" class="active" alt="House 1">
+        <img src="house2.jpg" alt="House 2">
+        <img src="house3.jpg" alt="House 3">
+    </div>
+    <script>
+        var index = 0;
+        var images = document.querySelectorAll("#slideshow img");
+        function showNextImage() {
+            images[index].classList.remove("active");
+            index = (index + 1) % images.length;
+            images[index].classList.add("active");
+        }
+        setInterval(showNextImage, 3000);
+    </script>
+</body>
+</html>
+25. Implement a Dropdown Menu using JavaScript and CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            position: relative;
+            display: inline-block;
+        }
+        li a {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #575757;
+        }
+        li ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 0;
+        }
+        li:hover ul {
+            display: block;
+        }
+        li ul li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Women</a>
+            <ul>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Men</a>
+            <ul>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Trousers</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+26. Responsive Navigation Bar using Bootstrap and JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reservations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+27. Develop a Simple E-Commerce Webpage using Bootstrap
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Listing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Product Listing</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 1</h5>
+                        <p class="card-text">$49.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product2.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 2</h5>
+                        <p class="card-text">$59.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="product3.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Product 3</h5>
+                        <p class="card-text">$69.99</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+28. Create a Modal Popup Form using Bootstrap and JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Subscription Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Subscribe to our Newsletter</h1>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe</button>
+        <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="subscribeModalLabel">Subscribe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm /bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+29. Create a Simple Calculator using HTML, CSS, and JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        .calculator {
+            width: 200px;
+            margin: auto;
+        }
+        input {
+            width: 45px;
+            height: 45px;
+            font-size: 20px;
+            margin: 5px;
+        }
+        #result {
+            width: 190px;
+            height: 45px;
+            text-align: right;
+            font-size: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled><br>
+        <input type="button" value="1" onclick="addToResult('1')">
+        <input type="button" value="2" onclick="addToResult('2')">
+        <input type="button" value="3" onclick="addToResult('3')">
+        <input type="button" value="+" onclick="addToResult('+')"><br>
+        <input type="button" value="4" onclick="addToResult('4')">
+        <input type="button" value="5" onclick="addToResult('5')">
+        <input type="button" value="6" onclick="addToResult('6')">
+        <input type="button" value="-" onclick="addToResult('-')"><br>
+        <input type="button" value="7" onclick="addToResult('7')">
+        <input type="button" value="8" onclick="addToResult('8')">
+        <input type="button" value="9" onclick="addToResult('9')">
+        <input type="button" value="*" onclick="addToResult('*')"><br>
+        <input type="button" value="C" onclick="clearResult()">
+        <input type="button" value="0" onclick="addToResult('0')">
+        <input type="button" value="=" onclick="calculateResult()">
+        <input type="button" value="/" onclick="addToResult('/')">
+    </div>
+
+    <script>
+        function addToResult(value) {
+            document.getElementById("result").value += value;
+        }
+        function calculateResult() {
+            var result = eval(document.getElementById("result").value);
+            document.getElementById("result").value = result;
+        }
+        function clearResult() {
+            document.getElementById("result").value = "";
+        }
+    </script>
+</body>
+</html>
+30. Create a Tabbed Content Interface using HTML, CSS, and JavaScript
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Content</title>
+    <style>
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        .tabs {
+            display: flex;
+            cursor: pointer;
+        }
+        .tabs div {
+            padding: 10px;
+            margin-right: 10px;
+            background-color: #f1f1f1;
+        }
+        .tabs div.active {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Information</h1>
+    <div class="tabs">
+        <div onclick="openTab('about')" class="active">About Us</div>
+        <div onclick="openTab('services')">Services</div>
+        <div onclick="openTab('contact')">Contact</div>
+    </div>
+
+    <div id="about" class="tab active">
+        <h2>About Us</h2>
+        <p>We are a leading company in providing tech solutions.</p>
+    </div>
+    <div id="services" class="tab">
+        <h2>Services</h2>
+        <p>We offer web development, software development, and more.</p>
+    </div>
+    <div id="contact" class="tab">
+        <h2>Contact Us</h2>
+        <p>Email us at contact@company.com or call us at (123) 456-7890.</p>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            var tabs = document.querySelectorAll('.tab');
+            var tabButtons = document.querySelectorAll('.tabs div');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            tabButtons.forEach(button => button.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector('.tabs div[onclick="openTab(\'' + tabId + '\')"]').classList.add('active');
+        }
+    </script>
+</body>
+</html>
+31. Use React to create a dynamic to-do list application
+For this task, we will use React to create a simple to-do list app.
+Create React App:
+Install create-react-app using the command npx create-react-app todo-list.
+Navigate to the project folder and replace the default App.js content with the code below.
+// App.js
+import React, { useState } from "react";
+import "./App.css";
+function App() {
+  const [task, setTask] = useState("");
+  const [tasks, setTasks] = useState([]);
+  const addTask = () => {
+    if (task.trim()) {
+      setTasks([...tasks, task]);
+      setTask("");
+    }
+  };
+  const removeTask = (index) => {
+    const newTasks = tasks.filter((_, i) => i !== index);
+    setTasks(newTasks);
+  };
+  return (
+    <div className="App">
+      <h1>To-Do List</h1>
+      <input
+        type="text"
+        value={task}
+        onChange={(e) => setTask(e.target.value)}
+        placeholder="Enter a task"
+      />
+      <button onClick={addTask}>Add Task</button>
+      <ul>
+        {tasks.map((t, index) => (
+          <li key={index}>
+            {t} <button onClick={() => removeTask(index)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+export default App;
+Styling the App: You can style the app by editing the App.css file:
+.App {
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+}
+button {
+  padding: 8px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 5px 0;
+}
+Run the app using npm start.
+
+32. Create a contact form in React and validate inputs using JavaScript
+// App.js
+import React, { useState } from "react";
+function App() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [errors, setErrors] = useState({});
+  const validateEmail = (email) => {
+    return /\S+@\S+\.\S+/.test(email);
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let formErrors = {};
+    if (!formData.name.trim()) {
+      formErrors.name = "Name is required";
+    }
+    if (!validateEmail(formData.email)) {
+      formErrors.email = "Invalid email address";
+    }
+    if (!formData.message.trim()) {
+      formErrors.message = "Message is required";
+    }
+    if (Object.keys(formErrors).length === 0) {
+      alert("Form submitted successfully!");
+    } else {
+      setErrors(formErrors);
+    }
+  };
+  return (
+    <div className="App">
+      <h1>Contact Form</h1>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Name</label>
+          <input
+            type="text"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          />
+          {errors.name && <p>{errors.name}</p>}
+        </div>
+        <div>
+          <label>Email</label>
+          <input
+            type="email"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          />
+          {errors.email && <p>{errors.email}</p>}
+        </div>
+        <div>
+          <label>Message</label>
+          <textarea
+            value={formData.message}
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
+          />
+          {errors.message && <p>{errors.message}</p>}
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
+Develop a weather application using React and an open API
+Get an API Key:
+Sign up at OpenWeatherMap to get an API key.
+Modify the App.js file:
+
+// App.js
+
+import React, { useState } from "react"
+function App() {
+  const [city, setCity] = useState("");
+  const [weather, setWeather] = useState(null);
+  const getWeather = async () => {
+    if (!city) return;
+    const apiKey = "YOUR_API_KEY";
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const response = await fetch(url);
+    const data = await response.json();
+    if (data.cod === 200) {
+      setWeather(data);
+    } else {
+      alert("City not found");
+    }
+  };
+  return (
+    <div className="App">
+      <h1>Weather App</h1>
+      <input
+        type="text"
+        value={city}
+        onChange={(e) => setCity(e.target.value)}
+        placeholder="Enter city name"
+      />
+      <button onClick={getWeather}>Get Weather</button>
+      {weather && (
+        <div>
+          <h2>{weather.name}</h2>
+          <p>Temperature: {weather.main.temp}°C</p>
+          <p>Weather: {weather.weather[0].description}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+export default App;
+34. Implement a web page using PHP to display form data submitted by a user
+Create form.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Form</title>
+</head>
+<body>
+  <form action="display.php" method="post">
+    <label>Name: </label>
+    <input type="text" name="name"><br>
+    <label>Email: </label>
+    <input type="email" name="email"><br>
+    <label>Message: </label>
+    <textarea name="message"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+Create display.php:
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
+    echo "<h2>Form Data Submitted:</h2>";
+    echo "Name: " . $name . "<br>";
+    echo "Email: " . $email . "<br>";
+    echo "Message: " . $message . "<br>";
+}
+?>
+35. Connect a PHP application to a MySQL database and perform CRUD operations
+For this task, you can create a basic blog post management system with CRUD operations.
+Create a MySQL Database:
+CREATE DATABASE blog;
+USE blog;
+CREATE TABLE posts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255),
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+Create index.php to display posts:
+<?php
+$mysqli = new mysqli("localhost", "root", "", "blog");
+$result = $mysqli->query("SELECT * FROM posts");
+echo "<h1>Blog Posts</h1>";
+while ($row = $result->fetch_assoc()) {
+    echo "<h2>" . $row['title'] . "</h2>";
+    echo "<p>" . $row['content'] . "</p>";
+}
+?>
+Create a form (create.php) to add a new post:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Post</title>
+</head>
+<body>
+  <h1>Create a New Post</h1>
+  <form action="store.php" method="post">
+    <label>Title: </label>
+    <input type="text" name="title"><br>
+    <label>Content: </label>
+    <textarea name="content"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+Handle Post Creation (store.php):
+<?php
+$mysqli = new mysqli("localhost", "root", "", "blog");
+$title = htmlspecialchars($_POST['title']);
+$content = htmlspecialchars($_POST['content']);
+$mysqli->query("INSERT INTO posts (title, content) VALUES ('$title', '$content')");
+header("Location: index.php");
+?>
+36. Create a registration form using PHP and store the user data in MySQL
+Create the MySQL Database and Table:
+CREATE DATABASE user_registration;
+USE user_registration;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255),
+    password VARCHAR(255)
+);
+Create register.html for user input:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+</head>
+<body>
+  <h1>Register</h1>
+  <form action="register.php" method="post">
+    <label>Name: </label>
+    <input type="text" name="name" required><br>
+    <label>Email: </label>
+    <input type="email" name="email" required><br>
+    <label>Password: </label>
+    <input type="password" name="password" required><br>
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
+Create register.php to store user data:
+<?php
+$mysqli = new mysqli("localhost", "root", "", "user_registration");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $stmt = $mysqli->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
+    $stmt->bind_param("sss", $name, $email, $password);
+    $stmt->execute();
+    echo "Registration successful!";
+}
+?>
+37. Create a REST API with Node.js and Express to manage products in a store
+Set up the project:
+mkdir product-api
+cd product-api
+npm init -y
+npm install express
+Create server.js:
+const express = require('express');
+const app = express();
+app.use(express.json());
+let products = [
+    { id: 1, name: 'Laptop', price: 800 },
+    { id: 2, name: 'Smartphone', price: 500 }
+];
+// Get all products
+app.get('/products', (req, res) => {
+    res.json(products);
+});
+// Get product by ID
+app.get('/products/:id', (req, res) => {
+    const product = products.find(p => p.id === parseInt(req.params.id));
+    if (!product) return res.status(404).send('Product not found');
+ res.json(product);
+});
+// Create a new product
+app.post('/products', (req, res) => {
+    const newProduct = {
+        id: products.length + 1,
+        name: req.body.name,
+        price: req.body.price
+    };
+    products.push(newProduct);
+    res.status(201).json(newProduct);
+});
+// Update a product
+app.put('/products/:id', (req, res) => {
+    const product = products.find(p => p.id === parseInt(req.params.id));
+    if (!product) return res.status(404).send('Product not found');
+    product.name = req.body.name;
+    product.price = req.body.price;
+    res.json(product);
+});
+// Delete a product
+app.delete('/products/:id', (req, res) => {
+    const productIndex = products.findIndex(p => p.id === parseInt(req.params.id));
+    if (productIndex === -1) return res.status(404).send('Product not found');
+    products.splice(productIndex, 1);
+    res.status(204).send();
+});
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
+Run the Server:
+node server.js
+You can now interact with the API at http://localhost:3000/products using tools like Postman or cURL.
+38. Implement a Node.js application that connects to MongoDB to store and retrieve data
+Install Dependencies:
+npm install express mongoose
+Create server.js:
+const express = require('express');
+const mongoose = require('mongoose')
+const app = express();
+app.use(express.json());
+mongoose.connect('mongodb://localhost:27017/todos', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+const todoSchema = new mongoose.Schema({
+    title: String,
+    completed: Boolean
+});
+const Todo = mongoose.model('Todo', todoSchema);
+// Get all todos
+app.get('/todos', async (req, res) => {
+    const todos = await Todo.find();
+    res.json(todos);
+});
+// Create a new todo
+app.post('/todos', async (req, res) => {
+    const todo = new Todo({
+        title: req.body.title,
+        completed: false
+    });
+    await todo.save();
+    res.status(201).json(todo);
+});
+
+// Update a todo
+app.put('/todos/:id', async (req, res) => {
+    const todo = await Todo.findById(req.params.id);
+    if (!todo) return res.status(404).send('Todo not found');
+    todo.completed = req.body.completed;
+    await todo.save();
+    res.json(todo);
+});
+// Delete a todo
+app.delete('/todos/:id', async (req, res) => {
+    await Todo.findByIdAndDelete(req.params.id);
+    res.status(204).send();
+});
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server running on port ${port}`));
+40. Implement a user authentication system using Django and MySQL
+Install MySQL Client:
+pip install mysqlclient
+Configure settings.py for MySQL:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'user_auth',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+Set up Django Authentication:
+Django has built-in authentication. In the terminal, run:
+python manage.py migrate
+Create the Login View in views.py:
+from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('home')
+        else:
+            return render(request, 'login.html', {'error': 'Invalid credentials'})
+    return render(request, 'login.html')
+Create login.html:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label>Username</label>
+        <input type="text" name="username"><br>
+        <label>Password</label>
+        <input type="password" name="password"><br>
+        <button type="submit">Login</button>
+    </form>
+    {% if error %}
+    <p>{{ error }}</p>
+    {% endif %}
+</body>
+</html>
+
+
+
